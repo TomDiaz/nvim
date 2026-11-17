@@ -153,6 +153,9 @@ Para no duplicar código, la lógica que antes estaba dentro del bloque de Teles
 | `telescope(prompt_bufnr)` | La acción de `Ctrl + o` en Telescope (con multi-selección por `Tab`) |
 | `neogit()` | Toma el archivo bajo el cursor del panel de neogit y, si está sobre un cambio, calcula la línea real en el archivo |
 
+> [!note] Íconos de la pestaña
+> Los perfiles `nvim-<ext>` salen de un fragment de Windows Terminal que se genera con un script. Ver [[Íconos de pestaña en Windows Terminal]].
+
 El bloque de Telescope en `lua/plugins/init.lua` ahora solo hace:
 
 ```lua
