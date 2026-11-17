@@ -1,0 +1,8 @@
+{
+  "theme": "obsidian",
+  "cssTheme": "Transparent",
+  "enabledCssSnippets": [
+    "math-size"
+  ],
+  "showRibbon": true
+}

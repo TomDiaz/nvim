@@ -1,0 +1,302 @@
+{
+  "main": {
+    "id": "763173c12f685335",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b4f3aa3bf3b744d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e21f832765746baa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git estilo VS Code.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Git estilo VS Code"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e5063aea88c3ce7b",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a03e64dd088ddff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c67d992e5575b9d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "1e3f0ebf6533ba00",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "fe56721101dbd199",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          },
+          {
+            "id": "cc1b892701e58990",
+            "type": "leaf",
+            "state": {
+              "type": "typst-tools",
+              "state": {},
+              "icon": "typst-stroke",
+              "title": "Typst Tools"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "52667be8c3d1ed31",
+    "type": "split",
+    "children": [
+      {
+        "id": "d2031ea4e32063ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c60f8e7bf38b9d0a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "763777d3ae213f0f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "7c732baba265befc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "b2af657f273c4934",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "b4b3763afc2b6682",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Recta numérica.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          },
+          {
+            "id": "b48beb7074c7556f",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "todo"
+            }
+          },
+          {
+            "id": "db04eebaaeca4683",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "git-view"
+            }
+          },
+          {
+            "id": "60880a243acf7587",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
+            }
+          },
+          {
+            "id": "ad427e7b6932cc0c",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
+            }
+          },
+          {
+            "id": "8b57bb8334be533f",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
+            }
+          }
+        ],
+        "currentTab": 9
+      }
+    ],
+    "direction": "horizontal",
+    "width": 374.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false,
+      "obsidian-git:Open Git source control": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "e21f832765746baa",
+  "lastOpenFiles": [
+    "sedpoDIVf",
+    "Git estilo VS Code.md.tmp",
+    "Comandos y atajos de NvChad.md",
+    "Cursor animado con smear-cursor.md",
+    "Dividir y unir bloques con treesj.md",
+    "Dividir y unir bloques con treesj.md.tmp.8208.824f572033f8",
+    "Explorador de archivos estilo VS Code.md",
+    "Claude Code en NvChad.md",
+    "Soporte .NET en NvChad.md",
+    "Gestión de soluciones .NET en NvChad.md",
+    "Cursor animado con smear-cursor.md.tmp.19384.68b28e85da57",
+    "Claude Code en NvChad.md.tmp.17180.d350c772bfa4",
+    "Comandos y atajos de NvChad.md.tmp.14836.416ca924ccb6",
+    "Números naturales.md",
+    "Matematicas/Recta numérica.md",
+    "Seminario/Matematica/Temas Previos/UNIDAD 1 temas previos CONJUNTOS NUMÉRICOS.pdf",
+    "Excalidraw/Pizarra.md",
+    "Sin título.base",
+    "Matematicas/Adición y sustracción de números enteros.md",
+    "Matematicas/Multiplicación y división de números enteros.md",
+    "Matematicas/Supresión de paréntesis.md",
+    "Matematicas/Máximo común divisor y mínimo común múltiplo.md",
+    "Matematicas/Potencias de números enteros.md",
+    "Assets/Pasted image 20260907001911.png",
+    "Assets/Pasted image 20260907002018.png",
+    "Assets/Pasted image 20260907002003.png",
+    "Assets/Pasted image 20260907001947.png",
+    "Assets/Pasted image 20260907001932.png",
+    "Sin título.canvas",
+    "Assets/Pasted image 20260906233810.png",
+    "Assets/Pasted image 20260906233519.png",
+    "Assets/Pasted image 20260906233641.png",
+    "Assets/Pasted image 20260906233616.png",
+    "Assets/Pasted image 20260906233536.png",
+    "Assets",
+    "Seminario/Temas seminario.md",
+    "Seminario/Untitled.typ",
+    "Excalidraw",
+    "Fisica/Vectores.md",
+    "Matematicas/Área.md",
+    "Matematicas/Conjunto numericos.md",
+    "Matematicas/Trigonométricas Básicas.md",
+    "Matematicas/Teorema de Pitágoras.md",
+    "Matematicas/Perímetros.md",
+    "Bienvenido.md"
+  ]
+}

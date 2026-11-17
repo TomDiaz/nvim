@@ -1,0 +1,15 @@
+
+.markdown-rendered mjx-container svg,
+.markdown-source-view mjx-container svg {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.markdown-source-view mjx-container {
+    background:
+        radial-gradient(circle at 0 0, transparent 0, rgba(27,27,27,.62) 25%),
+        radial-gradient(circle at 100% 0, transparent 0, rgba(27,27,27,.62) 25%),
+        radial-gradient(circle at 0 100%, transparent 0, rgba(27,27,27,.62) 25%),
+        radial-gradient(circle at 100% 100%, transparent 0, rgba(27,27,27,.62) 25%);
+    border-radius: 10px;
+}
