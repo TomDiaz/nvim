@@ -57,6 +57,8 @@ Referencia de todas las teclas y comandos de esta configuración: los que trae N
 
 | Comando | Acción |
 |---|---|
+| `Ctrl + F` | Buscar en el archivo estilo VS Code (ver [[Búsqueda en el archivo estilo VS Code]]) |
+| `Ctrl + F` → `Ctrl + A` | Seleccionar todos los resultados y editarlos a la vez |
 | `/texto` | Buscar hacia adelante (`n` siguiente, `N` anterior) |
 | `*` | Buscar la palabra bajo el cursor |
 | `:%s/viejo/nuevo/g` | Reemplazar en todo el archivo |
@@ -83,6 +85,9 @@ Definidos en `lua/mappings.lua`:
 |---|---|---|
 | `;` | Normal | Igual que `:` (entrar en modo comando) |
 | `jk` | Insertar | Salir al modo normal (igual que `Esc`) |
+| `Ctrl + F` | Normal, Insertar, Visual | Buscar en el archivo estilo VS Code (ver [[Búsqueda en el archivo estilo VS Code]]) |
+| `<leader>wd` | Normal | Documentar el archivo actual en Obsidian (ver [[Documentar el proyecto en Obsidian con WikiDoc]]) |
+| `<leader>wD` | Normal | Documentar todo el proyecto en Obsidian |
 
 ---
 
@@ -308,6 +313,14 @@ Se escriben en modo normal empezando por `:` (o `;`).
 | `:checkhealth` | Revisar que todo esté bien instalado |
 | `:checkhealth nvim-treesitter` | Revisar solo treesitter |
 
+### Documentación (ver [[Documentar el proyecto en Obsidian con WikiDoc]])
+
+| Comando | Para qué |
+|---|---|
+| `:WikiDoc` | Crear o actualizar la nota del archivo actual (con datos del LSP) y abrirla en Obsidian |
+| `:WikiDocAll` | Documentar todos los archivos del proyecto con la extensión del actual |
+| `:WikiDocAll cs xaml` | Igual, con esas extensiones |
+
 ### LSP y C#
 
 | Comando | Para qué |
@@ -324,6 +337,16 @@ Se escriben en modo normal empezando por `:` (o `;`).
 | `:NvCheatsheet` | Chuleta de atajos (igual que `<leader>ch`) |
 | `:Telescope` | Ver todos los buscadores de Telescope |
 | `:WhichKey` | Ver todos los atajos |
+
+### Errores (ver [[Registro de errores en errors.log]])
+
+| Comando | Para qué |
+|---|---|
+| `:ErrorLog` | Abrir el log de errores en un split |
+| `:ErrorLogNotepad` | Abrir el log de errores en el Bloc de notas |
+| `:ErrorLogCopy` | Copiar el último error al portapapeles |
+| `:ErrorLogClaude` | Mandar el último error al panel de Claude para que lo analice |
+| `:ErrorLogClear` | Vaciar el log de errores |
 
 ### Archivos y ayuda
 

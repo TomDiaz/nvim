@@ -76,14 +76,14 @@ Se instaló con `:Lazy install`. La primera vez que carga, easy-dotnet instala s
 
 ## Atajos nuevos
 
-| Atajo | Comando | Acción |
-|---|---|---|
-| `<leader>nn` | `:Dotnet` | Menú con todos los comandos de easy-dotnet |
-| `<leader>ns` | `:Dotnet solution select` | Elegir la solución (`.sln`) |
-| `<leader>nb` | `:Dotnet build` | Compilar |
-| `<leader>nr` | `:Dotnet run` | Ejecutar el proyecto |
-| `<leader>nt` | `:Dotnet testrunner` | Abrir el explorador de tests |
-| `<leader>np` | `:Dotnet project view` | Ver el proyecto: referencias y paquetes NuGet |
+| Atajo        | Comando                   | Acción                                        |
+| ------------ | ------------------------- | --------------------------------------------- |
+| `<leader>nn` | `:Dotnet`                 | Menú con todos los comandos de easy-dotnet    |
+| `<leader>ns` | `:Dotnet solution select` | Elegir la solución (`.sln`)                   |
+| `<leader>nb` | `:Dotnet build`           | Compilar                                      |
+| `<leader>nr` | `:Dotnet run`             | Ejecutar el proyecto                          |
+| `<leader>nt` | `:Dotnet testrunner`      | Abrir el explorador de tests                  |
+| `<leader>np` | `:Dotnet project view`    | Ver el proyecto: referencias y paquetes NuGet |
 
 > [!note] Conflicto con `<leader>n` de NvChad
 > NvChad usa `<leader>n` para mostrar u ocultar los números de línea. Como ahora hay atajos que empiezan por `<leader>n`, al pulsar solo `<leader>n` Neovim espera un momento (`timeoutlen`) por si viene otra tecla, y después cambia los números. Para evitarlo se puede cambiar el prefijo de estos atajos, por ejemplo a `<leader>.`.

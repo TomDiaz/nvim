@@ -84,10 +84,17 @@ M.nvdash = {
 	end,
 	buttons = {},
 }
--- M.ui = {
---       tabufline = {
---          lazyload = false
---      }
--- }
+-- barra de abajo (statusline)
+M.ui = {
+	statusline = {
+		-- "default" | "minimal" | "vscode" | "vscode_colored"
+		theme = "vscode_colored",
+		-- "default" | "round" | "block" | "arrow" (solo aplica a default y minimal)
+		separator_style = "round",
+	},
+	-- tabufline = {
+	-- 	lazyload = false,
+	-- },
+}
 
 return M

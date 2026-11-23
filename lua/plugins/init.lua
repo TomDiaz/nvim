@@ -42,6 +42,13 @@ return {
       picker = "telescope",
       -- el LSP ya lo da roslyn.nvim; evitar un segundo servidor Roslyn
       lsp = { enabled = false },
+      -- :Dotnet run (comando o <leader>nr) abre la app en una ventana nueva de
+      -- Windows Terminal. wt.exe es un alias de la Store, así que se lanza vía
+      -- cmd.exe (igual que en lua/configs/wt_open.lua)
+      external_terminal = {
+        command = "cmd.exe",
+        args = { "/c", "wt", "-w", "-1", "nt", "--" },
+      },
     },
     keys = {
       { "<leader>nb", "<cmd>Dotnet build<cr>", desc = "Dotnet build" },
@@ -118,7 +125,7 @@ return {
       particle_max_initial_velocity = 20,
       particle_velocity_from_cursor = 0.5,
       particle_damping = 0.25,
-      particle_gravity = 50,
+      particle_gravity = -50,
       min_distance_emit_particles = 0,
     },
   },

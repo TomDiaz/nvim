@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comandos y atajos de NvChad.md",
+                "file": "Claude Code en NvChad.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Comandos y atajos de NvChad"
+              "title": "Claude Code en NvChad"
             }
           }
         ]
@@ -238,6 +238,10 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "switcher:Abrir selector rápido": false,
       "graph:Abrir vista gráfica": false,
       "canvas:Crear nuevo lienzo": false,
@@ -249,17 +253,23 @@
   },
   "active": "e21f832765746baa",
   "lastOpenFiles": [
-    "Dividir y unir bloques con treesj.md",
+    "Comandos y atajos de NvChad.md.tmp.10476.2706bd3e0f99",
+    "Búsqueda en el archivo estilo VS Code.md",
+    "Registro de errores en errors.log.md",
+    "Outline de clases con aerial.md",
+    "Notificaciones y cmdline con noice.md",
+    "Íconos de pestaña en Windows Terminal.md",
     "Git estilo VS Code.md",
+    "Gestión de soluciones .NET en NvChad.md",
+    "Comandos y atajos de NvChad.md",
+    "Dividir y unir bloques con treesj.md",
     "sedpoDIVf",
     "Git estilo VS Code.md.tmp",
-    "Comandos y atajos de NvChad.md",
     "Cursor animado con smear-cursor.md",
     "Dividir y unir bloques con treesj.md.tmp.8208.824f572033f8",
     "Explorador de archivos estilo VS Code.md",
     "Claude Code en NvChad.md",
     "Soporte .NET en NvChad.md",
-    "Gestión de soluciones .NET en NvChad.md",
     "Cursor animado con smear-cursor.md.tmp.19384.68b28e85da57",
     "Claude Code en NvChad.md.tmp.17180.d350c772bfa4",
     "Comandos y atajos de NvChad.md.tmp.14836.416ca924ccb6",
@@ -289,10 +299,6 @@
     "Seminario/Untitled.typ",
     "Fisica/Vectores.md",
     "Matematicas/Área.md",
-    "Matematicas/Conjunto numericos.md",
-    "Matematicas/Trigonométricas Básicas.md",
-    "Matematicas/Teorema de Pitágoras.md",
-    "Matematicas/Perímetros.md",
-    "Bienvenido.md"
+    "Matematicas/Conjunto numericos.md"
   ]
 }
