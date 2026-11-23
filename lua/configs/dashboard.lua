@@ -47,11 +47,40 @@ local font = {
 }
 
 local drawing = {
-  [[      |\      _,,,---,,_         ]],
-  [[ZZZzz /,`.-'`'    -.  ;-;;,_     ]],
-  [[     |,4-  ) )-,_. ,\ (  `'-'    ]],
-  [[    '---''(_/--'  `-'\_)         ]],
+  [[              ;i.]],
+  [[               M$L                    .;i.]],
+  [[               M$Y;                .;iii;;.]],
+  [[              ;$YY$i._           .iiii;;;;;]],
+  [[             .iiiYYYYYYiiiii;;;;i;iii;; ;;;]],
+  [[           .;iYYYYYYiiiiiiYYYiiiiiii;;  ;;;]],
+  [[        .YYYY$$$$YYYYYYYYYYYYYYYYiii;; ;;;;]],
+  [[      .YYY$$$$$$YYYYYY$$$$iiiY$$$$$$$ii;;;;]],
+  [[     :YYYF`,  TYYYYY$$$$$YYYYYYYi$$$$$iiiii;]],
+  [[     Y$MM: \  :YYYY$$P"````"T$YYMMMMMMMMiiYY.]],
+  [[  `.;$$M$$b.,dYY$$Yi; .(     .YYMMM$$$MMMMYY]],
+  [[.._$MMMMM$!YYYYYYYYYi;.`"  .;iiMMM$MMMMMMMYY]],
+  [[ ._$MMMP` ```""4$$$$$iiiiiiii$MMMMMMMMMMMMMY;]],
+  [[  MMMM$:       :$$$$$$$MMMMMMMMMMM$$MMMMMMMYYL]],
+  [[ :MMMM$$.    .;PPb$$$$MMMMMMMMMM$$$$MMMMMMiYYU:]],
+  [[  iMM$$;;: ;;;;i$$$$$$$MMMMM$$$$MMMMMMMMMMYYYYY]],
+  [[  `$$$$i .. ``:iiii!*"``.$$$$$$$$$MMMMMMM$YiYYY]],
+  [[   :Y$$iii;;;.. ` ..;;i$$$$$$$$$MMMMMM$$YYYYiYY:]],
+  [[    :$$$$$iiiiiii$$$$$$$$$$$MMMMMMMMMMYYYYiiYYYY.]],
+  [[     `$$$$$$$$$$$$$$$$$$$$MMMMMMMM$YYYYYiiiYYYYYY]],
+  [[      YY$$$$$$$$$$$$$$$$MMMMMMM$$YYYiiiiiiYYYYYYY]],
+  [[     :YYYYYY$$$$$$$$$$$$$$$$$$YYYYYYYiiiiYYYYYYi']],
 }
+
+-- rellenar a la derecha para que el dibujo quede como un bloque y no se deforme al centrar
+do
+  local dw = 0
+  for _, l in ipairs(drawing) do
+    dw = math.max(dw, vim.api.nvim_strwidth(l))
+  end
+  for i, l in ipairs(drawing) do
+    drawing[i] = l .. string.rep(" ", dw - vim.api.nvim_strwidth(l))
+  end
+end
 
 local function big_text(str, scale)
   local fill, empty, gap = string.rep("█", scale), string.rep(" ", scale), string.rep(" ", scale)
