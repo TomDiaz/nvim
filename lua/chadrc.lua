@@ -24,7 +24,7 @@ local function blend(dark, bg, alpha)
 end
 
 M.base46 = {
-	theme = "gruvchad",
+	theme = "tokyonight",
   transparency = true,
 	hl_override = {
 		Cursor = { bg = "#ff8c00", fg = "#000000" },
@@ -43,6 +43,19 @@ M.base46 = {
 		NvimTreeGitNewIcon = { fg = "green" },
 		NvimTreeGitDeletedIcon = { fg = "red" },
 		NvimTreeModifiedIcon = { fg = "white" },
+		-- pestañas (tabufline) con acrílico: sin fondo, se ve el tinte de Windows Terminal.
+		-- base46 ya limpia TbFill/TbBuf* con transparency; acá se completan los botones y
+		-- tabs, y la pestaña activa se distingue por color + subrayado en vez de fondo
+		TbBufOn = { fg = "white", bg = "NONE", bold = true, underline = true, sp = "blue" },
+		TbBufOnModified = { fg = "green", bg = "NONE", underline = true, sp = "blue" },
+		TbBufOnClose = { fg = "red", bg = "NONE", underline = true, sp = "blue" },
+		TbTabOn = { fg = "red", bg = "NONE" },
+		TbTabOff = { fg = "white", bg = "NONE" },
+		TbTabNewBtn = { fg = "white", bg = "NONE" },
+		TbTabCloseBtn = { fg = "nord_blue", bg = "NONE" },
+		TBTabTitle = { fg = "blue", bg = "NONE" },
+		TbThemeToggleBtn = { fg = "white", bg = "NONE" },
+		TbCloseAllBufsBtn = { fg = "red", bg = "NONE" },
 		-- el fondo del explorador queda transparente (transparency = true) para que
 		-- se vea el acrílico #1B1F27 de Windows Terminal; solo la línea seleccionada es sólida
 		--NvimTreeCursorLine = { bg = "one_bg" },

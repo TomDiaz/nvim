@@ -184,6 +184,7 @@ Dentro del explorador:
 | `<leader>fb` | Buscar entre los buffers abiertos |
 | `<leader>fo` | Archivos abiertos recientemente |
 | `<leader>fh` | Buscar en la ayuda de Neovim |
+| `<leader>fs` | Miembros del archivo actual: clases, propiedades, métodos (ver [[Outline de clases con aerial]]) |
 | `<leader>ma` | Ver las marcas |
 | `<leader>cm` | Commits de git |
 | `<leader>gt` | Estado de git (archivos modificados) |
@@ -237,6 +238,9 @@ Funcionan cuando el servidor de lenguaje está conectado al archivo.
 | `grn` | Renombrar símbolo (versión de Neovim) |
 | `gra` | Acciones de código (arreglos rápidos, `using` que faltan, etc.) |
 | `gO` | Lista de símbolos del archivo (clases, métodos) |
+| `<leader>o` | Panel con el árbol de la clase: campos, propiedades, métodos (ver [[Outline de clases con aerial]]) |
+| `<leader>O` | Árbol de la clase en ventana flotante, con vista previa |
+| `<leader>fs` | Buscar entre los miembros del archivo con Telescope (también `/` dentro del panel) |
 | `Ctrl + s` | (Modo insertar) ver la firma de la función que estás escribiendo |
 | `Ctrl + o` | Volver de donde saltaste con `gd` |
 

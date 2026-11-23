@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git estilo VS Code.md",
+                "file": "Comandos y atajos de NvChad.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git estilo VS Code"
+              "title": "Comandos y atajos de NvChad"
             }
           }
         ]
@@ -85,15 +85,15 @@
             "state": {
               "type": "typst-tools",
               "state": {},
-              "icon": "typst-stroke",
-              "title": "Typst Tools"
+              "icon": "lucide-ghost",
+              "title": "typst-tools"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 297.5
   },
   "right": {
     "id": "52667be8c3d1ed31",
@@ -224,8 +224,8 @@
             "state": {
               "type": "todo",
               "state": {},
-              "icon": "checkmark",
-              "title": "Todo List"
+              "icon": "lucide-ghost",
+              "title": "todo"
             }
           }
         ],
@@ -244,20 +244,17 @@
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false,
-      "obsidian-git:Open Git source control": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-kanban:Create new board": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "bases:Crear nueva base": false
     }
   },
   "active": "e21f832765746baa",
   "lastOpenFiles": [
+    "Dividir y unir bloques con treesj.md",
+    "Git estilo VS Code.md",
     "sedpoDIVf",
     "Git estilo VS Code.md.tmp",
     "Comandos y atajos de NvChad.md",
     "Cursor animado con smear-cursor.md",
-    "Dividir y unir bloques con treesj.md",
     "Dividir y unir bloques con treesj.md.tmp.8208.824f572033f8",
     "Explorador de archivos estilo VS Code.md",
     "Claude Code en NvChad.md",
@@ -290,7 +287,6 @@
     "Assets",
     "Seminario/Temas seminario.md",
     "Seminario/Untitled.typ",
-    "Excalidraw",
     "Fisica/Vectores.md",
     "Matematicas/Área.md",
     "Matematicas/Conjunto numericos.md",

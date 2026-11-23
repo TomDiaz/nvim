@@ -561,6 +561,101 @@ return {
     },
   },
 
+  -- Outline: árbol de la clase (campos, propiedades, métodos) vía LSP documentSymbol
+  -- (a la izquierda: la derecha ya la usan nvim-tree y el panel de Claude)
+  {
+    "stevearc/aerial.nvim",
+    cmd = { "AerialToggle", "AerialOpen", "AerialNavToggle" },
+    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
+    init = function()
+      -- roslyn manda los miembros como "Nombre(TipoParam, ...) : TipoRetorno" (o "_campo : Tipo").
+      -- aerial pinta todo el nombre con un extmark; los matchadd de ventana le ganan,
+      -- así que se colorean parámetros y tipo sin tocar el color del nombre
+      vim.api.nvim_set_hl(0, "AerialParams", { link = "@variable.parameter", default = true })
+      vim.api.nvim_set_hl(0, "AerialReturnType", { link = "@type", default = true })
+      vim.api.nvim_set_hl(0, "AerialSignaturePunct", { link = "Comment", default = true })
+      -- panel ("aerial") y flotante ("aerial-nav"). El flotante pone el filetype antes de abrir
+      -- sus ventanas, así que los match se aplican diferido y por id a cada ventana del buffer;
+      -- BufWinEnter cubre el buffer que se vuelve a mostrar en otra ventana (toggle del panel)
+      local signature_fts = { aerial = true, ["aerial-nav"] = true }
+      vim.api.nvim_create_autocmd({ "FileType", "BufWinEnter" }, {
+        group = vim.api.nvim_create_augroup("AerialSignatureColors", { clear = true }),
+        callback = function(args)
+          if not signature_fts[vim.bo[args.buf].filetype] then return end
+          vim.schedule(function()
+            if not vim.api.nvim_buf_is_valid(args.buf) then return end
+            for _, win in ipairs(vim.fn.win_findbuf(args.buf)) do
+              if not vim.w[win].aerial_signature_colors then
+                vim.w[win].aerial_signature_colors = true
+                vim.fn.matchadd("AerialParams", [[\v\(\zs[^)]+\ze\)]], 20, -1, { window = win })
+                vim.fn.matchadd("AerialReturnType", [[\v \: \zs.+$]], 20, -1, { window = win })
+                vim.fn.matchadd("AerialSignaturePunct", [[\v[()]| \zs\:\ze ]], 20, -1, { window = win })
+              end
+            end
+          end)
+        end,
+      })
+    end,
+    opts = {
+      backends = { "lsp", "treesitter" }, -- roslyn primero; treesitter si no hay LSP
+      layout = {
+        default_direction = "left",
+        placement = "edge",
+        min_width = 30,
+        max_width = { 50, 0.25 },
+        -- aerial fuerza wrap = false; esto lo pisa para que los nombres largos bajen de línea
+        win_opts = {
+          wrap = true,
+          linebreak = true, -- corta en palabra, no a mitad
+          breakindent = true, -- la continuación respeta la sangría del ítem
+          breakindentopt = "shift:2",
+        },
+      },
+      attach_mode = "global", -- el panel sigue al buffer activo
+      filter_kind = {
+        "Class", "Constructor", "Enum", "Field", "Function",
+        "Interface", "Method", "Module", "Property", "Struct",
+      },
+      show_guides = true,
+      highlight_on_hover = true,
+      close_on_select = false,
+      nav = {
+        preview = true,
+        -- mismo wrap que el panel (se suma a cursorline/winblend por defecto del flotante)
+        win_opts = {
+          wrap = true,
+          linebreak = true,
+          breakindent = true,
+          breakindentopt = "shift:2",
+        },
+      },
+      keymaps = {
+        -- buscador dentro del panel: abre el de <leader>fs sobre el archivo que muestra el panel
+        ["/"] = {
+          callback = function()
+            local source_win = require("aerial.util").get_source_win()
+            if source_win and vim.api.nvim_win_is_valid(source_win) then
+              vim.api.nvim_set_current_win(source_win)
+            end
+            require("configs.aerial_symbols").pick()
+          end,
+          desc = "Buscar entre los miembros del archivo",
+        },
+      },
+    },
+    keys = {
+      { "<leader>o", "<cmd>AerialToggle<cr>", desc = "Outline: árbol de la clase (panel)" },
+      { "<leader>O", "<cmd>AerialNavToggle<cr>", desc = "Outline: navegación flotante" },
+      {
+        "<leader>fs",
+        function()
+          require("configs.aerial_symbols").pick()
+        end,
+        desc = "Telescope: miembros del archivo",
+      },
+    },
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
