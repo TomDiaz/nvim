@@ -9,6 +9,7 @@ if not vim.uv.fs_stat(lazypath) then
   vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
 end
 
+-- Agregando comentario de prueba 
 vim.opt.rtp:prepend(lazypath)
 
 local lazy_config = require "configs.lazy"
